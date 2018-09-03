@@ -78,8 +78,8 @@ const update = chain.then(() => {
   log.success(`Version and build number in ios project (plist file) changed.`, 2);
 }).then(() => {
   log.info('Updating version in android project...', 1);
-
-  helpers.changeVersionAndBuildInGradle(pathToGradle, version, build);
+  const gradleBuildNumber = helpers.getBuildNumberFromGradle(pathToGradle) + 1;
+  helpers.changeVersionAndBuildInGradle(pathToGradle, version, gradleBuildNumber);
   log.success(`Version and build number in android project (gradle file) changed.`, 2);
 });
 
