@@ -17,13 +17,8 @@
   "author": "Pavel Kondratenko",
   "license": "ISC",
   "dependencies": {
-    "chalk": "2.0.1",
-    "child_process": "1.0.2",
-    "fs": "0.0.1-security",
+    "chalk": "2.4.1",
     "readline-sync": "1.4.7",
     "yargs": "8.0.2"
   },
-  "devDependencies": {
-    "yarn": "0.21.3"
-  }
 }
